@@ -1521,7 +1521,7 @@ https://github.com/cmliu/edgetunnel
 			} else {
 				const response = await fetch(url ,{
 					headers: {
-						'User-Agent': `${UA} CF-Workers-edgetunnel/cmliu`
+						'User-Agent': `${userAgent.includes('curl')?'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36':UA} CF-Workers-edgetunnel/cmliu`
 					}});
 				content = await response.text();
 			}
