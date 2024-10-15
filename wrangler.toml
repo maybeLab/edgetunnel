@@ -1,3 +1,6 @@
 name = "cf-edgetunnel"
 main = "_worker.js"
 compatibility_date = "2024-10-14"
+
+[observability]
+enabled = true
